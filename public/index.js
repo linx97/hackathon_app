@@ -18,27 +18,25 @@ $(document).ready(function() {
      autoResize: true,
      afterCloudRender: function() {
        $('.draggable').draggable();
+       $( "#droppable" ).droppable({
+      drop: function( event, ui ) {
+        $( this )
+          .addClass( "ui-state-highlight" )
+          .find( "p" )
+            .html( "Dropped!" );
+      }
+    });
+    $( "#droppable2" ).droppable({
+      drop: function( event, ui ) {
+        $( this )
+          .addClass( "ui-state-highlight" )
+          .find( "p" )
+            .html( "Dropped!" );
+      }
+    });
      }
+
    });
 
-   $( function() {
-     
-     $( ".droppable" ).droppable({
-       drop: function( event, ui ) {
-         $( this )
-           .addClass( "ui-state-highlight" )
-           .find( "p" )
-             .html( "Dropped!" );
-       }
-     });
-     $( ".droppable2" ).droppable({
-       drop: function( event, ui ) {
-         $( this )
-           .addClass( "ui-state-highlight" )
-           .find( "p" )
-             .html( "Dropped!" );
-       }
-   });
- });
 
 });
