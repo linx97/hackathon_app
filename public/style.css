@@ -1,8 +1,26 @@
 .frame {
 	height: 600px;
 	width: 90%;
-	text-align: center;
+
 	background-color: black;
 	color: white;
 }
 
+	background-color: #9932cc;
+	
+}
+
+body{
+			]
+			color: white;
+   			padding: 10px;
+   			background-color: #4c1966;
+		}
+
+#title{
+	font-style: italic;
+	text-shadow: 2px 2px #2f4f4f;
+	font-size: 48px;
+		width: 90%;
+	text-align: center;
+}
