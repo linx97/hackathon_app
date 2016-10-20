@@ -1,0 +1,17 @@
+{
+  "name": "hackathon_app",
+  "homepage": "https://github.com/linx97/hackathon_app",
+  "authors": [
+    "Linx Latham <linxlatham@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
