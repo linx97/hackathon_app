@@ -15,9 +15,7 @@ $(document).ready(function() {
             drop: function( event, ui ) {
               $( this )
 
-              .addClass( "ui-state-highlight" )
               .find( "p" )
-              .html( "Dropped!" );
               var bin = event.target;
               var word = ui.draggable;
               var wordId = word[0].classList[1];
