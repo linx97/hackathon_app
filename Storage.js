@@ -1,5 +1,5 @@
 var fs = require('fs');
-var users = fs.readFileSync('./users.json');
+var data = fs.readFileSync('./data.json');
 
 function Storage() {
 	

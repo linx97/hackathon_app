@@ -50,7 +50,7 @@
   };
 
   jQCloud.DEFAULTS = {
-    width: 100,
+    width: 80 + "%",
     height: 100,
     center: { x: 0.5, y: 0.5 },
     steps: 10,
