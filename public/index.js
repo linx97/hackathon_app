@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   $.get('/api/wordlist', function(response) {
     var wordList = response;
-
+   var score = 0;
    $('.word-div').jQCloud(wordList, {
 
       autoResize: true,
@@ -19,11 +19,17 @@ $(document).ready(function() {
               .find( "p" );
               var bin = event.target;
               var word = ui.draggable;
+          
               var wordId = word[0].classList[1];
               if (wordId === bin.id) {
-                alert("You win!");
+                score = score +10;
+                alert("You win!" + "New Score = " + score);
+                
+
               } else {
-                alert("you loose");
+                score = score -5;
+                alert("you loose" + "New Score = " + score);
+
               }
             }
           });
