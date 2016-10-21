@@ -22,15 +22,15 @@ $(document).ready(function() {
           
               var wordId = word[0].classList[1];
               if (wordId === bin.id) {
-                score = score +10;
+                score = score +100;
                 $('#score').text(score);
-                $('#graphic').append("<img src=\"http://www.clker.com/cliparts/D/z/C/2/q/E/check-mark-md.png\">");
+                $('#graphic').text("👍").fadeTo(500, 1).fadeTo(1500, 0);
                 
 
               } else {
-                score = score -5;
+                score = score -50;
                 $('#score').text(score);
-
+                $('#graphic').text("👎").fadeTo(500, 1).fadeTo(1500, 0);
               }
             }
           });
