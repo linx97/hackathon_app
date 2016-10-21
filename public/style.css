@@ -72,7 +72,7 @@ h1 {
 
 .bins img {
     bottom: 0;
-    width: 135px;
+    width: 125px;
     z-index: 1;
 }
 
@@ -96,7 +96,7 @@ div.jqcloud span.w5 {
 
 .player-info {
 	height: 105%;
-	width: 300px;
+	width: 200px;
 	background-color: #2F2F2F;
 	position: absolute;
 	right: 0;
