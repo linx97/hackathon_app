@@ -3,7 +3,6 @@ $(document).ready(function() {
 
   $.get('/api/wordlist', function(response) {
     var wordList = response;
-    console.log(wordList);
 
     $('.word-div').jQCloud(wordList, {
 
@@ -15,17 +14,18 @@ $(document).ready(function() {
           $( ".droppable" ).droppable({
             drop: function( event, ui ) {
               $( this )
+
               .addClass( "ui-state-highlight" )
               .find( "p" )
               .html( "Dropped!" );
-            }
-          });
-          $( ".droppable2" ).droppable({
-            drop: function( event, ui ) {
-              $( this )
-              .addClass( "ui-state-highlight" )
-              .find( "p" )
-              .html( "Dropped!" );
+              var bin = event.target;
+              var word = ui.draggable;
+              var wordId = word[0].classList[1];
+              if (wordId === bin.id) {
+                alert("You win!");
+              } else {
+                alert("you loose");
+              }
             }
           });
         });
@@ -34,3 +34,4 @@ $(document).ready(function() {
   }, 'json');
 });
 
+// ui Object {draggable: jQuery.fn.init[1], helper: jQuery.fn.init[1], position: Object, offset: Object}draggable: jQuery.fn.init[1]0: span#9es1_word_42.draggable.js".w5.ui-draggable.ui-draggable-handlelength: 1__proto__: Object[0]helper: jQuery.fn.init[1]offset: Objectposition: Object__proto__: Object

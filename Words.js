@@ -15,6 +15,7 @@ var Words = function() {
 			var index = getRandom(data[a]);
 			if (!output.includes(data[a][index])) {
 				var j = new Word(data[a][index], a);
+				console.log(j)
 				output.push(j);
 			}
 		}
