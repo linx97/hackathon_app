@@ -20,6 +20,7 @@ h1 {
 	margin-left: 30%;
 	font-size: 3em;
 	color: #2F2F2F;
+	margin-bottom: 15px;
 }
 
 
@@ -75,17 +76,17 @@ h1 {
     width: 100%;
 }
 
-.bins img {
+.bin {
     bottom: 0;
-    width: 125px;
+    width: 135px;
     z-index: 1;
 }
 
-.bins p {
+.label {
 	position: absolute;
-	margin-top: -90px;
-	color: #2F2F2F;
-	font-weight: bold;
+	margin-top: 59px;
+    margin-left: -99px;
+	width: 60px;
 }
 
 div.jqcloud span.w5 {
@@ -93,21 +94,22 @@ div.jqcloud span.w5 {
    z-index: 1000;
    color: darkOrchid;
    font-family: 'Inconsolata', monospace;
+   cursor: auto;
+}
+
+div.jqcloud span:hover{
+  transform: scale(1.1);
+  color: #e0c1ef  !important;
+  cursor: pointer;
 }
 
 .player-div {
-	
 	overflow: hidden;
 }
 
 .player-info {
-<<<<<<< Updated upstream
-	height: 105%;
-	width: 200px;
-=======
 	height: 110%;
-	width: 300px;
->>>>>>> Stashed changes
+	width: 290px;
 	background-color: #2F2F2F;
 	position: absolute;
 	right: 0;
