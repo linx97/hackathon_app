@@ -4,6 +4,9 @@ var app = express();
 
 var PORT = process.env.port || 8000;
 
+var Word = require('./Word.js');
+var Words = require('./Words.js');
+var Storage = require('./Storage.js');
 var bodyParser = require("body-parser");
 
 app.use(bodyParser.urlencoded({extended: false}));
@@ -16,6 +19,11 @@ app.use(function(req, res, next) {
 
 app.get("/", function(req, res) {
 	res.sendFile(__dirname + "/public/index.html");
+});
+
+app.get("/api/wordlist", function(req, res) {
+	var words = new Words();
+	res.send(words);
 });
 
 app.post("/api", function(req, res) {

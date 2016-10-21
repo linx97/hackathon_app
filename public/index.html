@@ -3,54 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Hackathon App</title>
-
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="bower_components/jqcloud2/dist/jqcloud.min.css">
     <link rel="stylesheet" href="./style.css">
-    <script src="http://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="http://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="bower_components/jqcloud2/dist/jqcloud.min.js"></script>
     <script src="./index.js"></script>
-    <script>
-        $( function() {
-     
-     $( ".droppable" ).droppable({
-       drop: function( event, ui ) {
-         $( this )
-           .addClass( "ui-state-highlight" )
-           .find( "p" )
-             .html( "Dropped!" );
-       }
-     });
-     $( ".droppable2" ).droppable({
-       drop: function( event, ui ) {
-         $( this )
-           .addClass( "ui-state-highlight" )
-           .find( "p" )
-             .html( "Dropped!" );
-       }
-   });
- });
-    </script>
     
 </head>
 <body>
-    <h1>Title</h1>
+    <h1>Pardon Me?</h1>
     <div class="container">
         <div class="frame">
-            <div class="word-div">
+            <div class="word-div"></div>
+            <div class="bins">
+                <div><img src="./images/garbage.png" alt=""></div>
+                <div><img src="./images/garbage.png" alt=""></div>
+                <div><img src="./images/garbage.png" alt=""></div>
+                <div><img src="./images/garbage.png" alt=""></div>
+                <div><img src="./images/garbage.png" alt=""></div>
+                <div><img src="./images/garbage.png" alt=""></div>
+            </div>
 
         </div>
-    
-        <div id="droppable" class="ui-widget-header">
-    <p>Drop here</p>
-    </div>
-        <div class="player-info">
-            
 
-        </div>
-    </div>   
-
-
-
+        
+        <div class="player-info"></div>
+    </div>    
 </body>
 </html>
