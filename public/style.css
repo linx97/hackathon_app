@@ -102,3 +102,10 @@ div.jqcloud span.w5 {
 	right: 0;
 	top: 0;
 }
+
+.player-info div {
+	color: white;
+	height: 30%;
+	text-align: center;
+	padding-top: 15px;
+}

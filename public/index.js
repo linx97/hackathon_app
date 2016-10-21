@@ -23,12 +23,13 @@ $(document).ready(function() {
               var wordId = word[0].classList[1];
               if (wordId === bin.id) {
                 score = score +10;
-                alert("You win!" + "New Score = " + score);
+                $('#score').text(score);
+                $('#graphic').append("<img src=\"http://www.clker.com/cliparts/D/z/C/2/q/E/check-mark-md.png\">");
                 
 
               } else {
                 score = score -5;
-                alert("you loose" + "New Score = " + score);
+                $('#score').text(score);
 
               }
             }
