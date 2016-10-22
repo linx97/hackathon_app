@@ -1,5 +1,5 @@
 {
-	"jq": ["append()", "band()", "accordion", "progressbar", "slider", "find()", "get", "hover", "mouseover", "click"],
+	"jq": [".append()", ".band()", "accordion", "progressbar", "slider", ".find()", "get", "hover", "mouseover", ".click"],
 	"ht": ["!doctype", "script", "head", "body", "p", "div", "href", "h1", "meta", "title", "style", "ul", "li", "link", "script"],
 	"cs": ["footer", "width", "height", "id" , "class", "font", "color", "float", "margin", "padding", "background", "border"],
 	"mg": ["insert", "find", "findOne", "schema", "noSQL", "BSON", "CRUD", "collections", "remove", "save", "update", "models"],
