@@ -50,7 +50,7 @@
   };
 
   jQCloud.DEFAULTS = {
-    width: 80 + "%",
+    width: 90 + "%",
     height: 100,
     center: { x: 0.5, y: 0.5 },
     steps: 10,
@@ -148,7 +148,7 @@
         }
       }
 
-      this.data.angle = Math.random() * 6.28;
+      this.data.angle = Math.random() * 7;
       this.data.step = (this.options.shape === 'rectangular') ? 18.0 : 2.0;
       this.data.aspect_ratio = this.options.width / this.options.height;
       this.clearTimeouts();
@@ -191,8 +191,8 @@
 
     // Pairwise overlap detection
     overlapping: function(a, b) {
-      if (Math.abs(2.0*a.left + a.width - 2.0*b.left - b.width) < a.width + b.width) {
-        if (Math.abs(2.0*a.top + a.height - 2.0*b.top - b.height) < a.height + b.height) {
+      if (Math.abs(2.0*a.left + a.width - 1.0*b.left - b.width) < a.width + b.width) {
+        if (Math.abs(2.0*a.top + a.height - 1.0*b.top - b.height) < a.height + b.height) {
           return true;
         }
       }

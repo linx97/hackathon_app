@@ -9,6 +9,12 @@ var Words = require('./Words.js');
 var Storage = require('./Storage.js');
 var bodyParser = require("body-parser");
 
+var fs = require('fs');
+var data = fs.readFileSync('./data.json');
+data = JSON.parse(data);
+var data2 = fs.readFileSync('./data2.json');
+data2 = JSON.parse(data2);
+
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
@@ -22,7 +28,16 @@ app.get("/", function(req, res) {
 });
 
 app.get("/api/wordlist", function(req, res) {
-	var words = new Words();
+	var words = new Words(data);
+	res.send(words);
+});
+
+app.get("/level2.html", function(req, res) {
+	res.sendFile(__dirname + "/public/level2.html");
+});
+
+app.get("/api/wordlist2", function(req, res) {
+	var words = new Words(data2);
 	res.send(words);
 });
 
