@@ -16,9 +16,7 @@ $(document).ready(function() {
         $( function() {
           $( ".droppable" ).droppable({
             drop: function( event, ui ) {
-              $( this )
-
-              .find( "p" );
+              $( this ).find( "p" );
               var bin = event.target;
               var word = ui.draggable;
 
@@ -28,6 +26,7 @@ $(document).ready(function() {
                 scoreCount += 1;
                 $('#score').text(score);
                 $('#graphic').text("👍").fadeTo(500, 1).fadeTo(1000, 0);
+
                 if (scoreCount === 36) {
                   $('.final-score').text(score);
                   $('.popup').fadeIn(1000);
