@@ -8,9 +8,11 @@ var getRandom = function(arr) {
 var Words = function(data) {
 	var output = [];
 	for (var a in data) {
-		for (var i = 0; i < 7; i++) {
+		for (var i = 0; i < 6; i++) {
 			var index = getRandom(data[a]);
+			console.log(data[a][index]);
 			if (!output.includes(data[a][index])) {
+
 				var j = new Word(data[a][index], a);
 				output.push(j);
 			}

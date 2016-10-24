@@ -5,7 +5,7 @@
     <title>nerdWerds</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="bower_components/jqcloud2/dist/jqcloud.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Righteous|Monoton" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
@@ -17,28 +17,48 @@
 <body>
 	
 	<div class="container">
-		<h1 data-shadow='nerdWerds'>nerdWerds</h1>
+		<div class="codepen">  
+            <div id="wrapper">
+             <div id="word"><span class="l0">n</span><span class="l1">e</span><span class="l2">r</span><span class="l3">d</span><span class="l4">W</span><span class="l5">e</span><span class="l6">r</span><span class="l7">d</span><span class="l8">s</span>
+             </div>
+            </div>
+        </div>
 		<div class="frame">
 			<div class="word-div"><object><param name="wmode" value="opaque" /></object></div>
 			<div class="bins">
-				<div id="ht" class="droppable"><img class="bin" src="./images/garbage.png" alt=""><img class="label" src="./images/Logo_HTML5.svg.png" alt="" style="width: 77px; margin-top: 56px; margin-left: -107px;"></div>
-				<div id="cs" class="droppable"><img class="bin" src="./images/garbage.png" alt=""><img class="label" src="./images/Logo_CSS3.svg.png" alt="" style="margin-top: 52px; margin-left: -97px;"></div>
-				<div id="js" class="droppable"><img class="bin" src="./images/garbage.png" alt=""><img class="label" src="./images/Logo_JavaScript.svg" alt="" style="width: 61px; margin-top: 51px; margin-left: -99px;"></div>
-				<div id="jq" class="droppable"><img class="bin" src="./images/garbage.png" alt=""><img class="label" src="./images/Logo_JQuery.png" alt="" style="width: 70px; margin-left: -105px; margin-top: 58px;"></div>	
-				<div id="ne" class="droppable"><img class="bin" src="./images/garbage.png" alt=""><img class="label" src="./images/Logo_Node2.png" alt="" style="width: 79px; margin-left: -107px; margin-top: 58px;"></div>
-				<div id="mg" class="droppable"><img class="bin" src="./images/garbage.png" alt=""><img class="label" src="./images/Logo_Mongodb.svg.png" alt="" style="width: 71px; margin-left: -104px; margin-top: 58px;"></div>
+				<div id="ht" class="droppable"><img class="bin" src="./images/garbage.png" alt=""><img class="label" src="./images/Logo_HTML5.svg.png" alt="" style="width: 77px; margin-top: 50px; margin-left: -103px;"></div>
+				<div id="cs" class="droppable"><img class="bin" src="./images/garbage.png" alt=""><img class="label" src="./images/Logo_CSS3.svg.png" alt="" style="margin-top: 48px; margin-left: -92px;"></div>
+				<div id="js" class="droppable"><img class="bin" src="./images/garbage.png" alt=""><img class="label" src="./images/Logo_JavaScript.svg" alt="" style="width: 64px; margin-top: 44px; margin-left: -95px;"></div>
+				<div id="jq" class="droppable"><img class="bin" src="./images/garbage.png" alt=""><img class="label" src="./images/Logo_JQuery.png" alt="" style="width: 70px; margin-left: -100px; margin-top: 54px;"></div>	
+				<div id="ne" class="droppable"><img class="bin" src="./images/garbage.png" alt=""><img class="label" src="./images/Logo_Node2.png" alt="" style="width: 79px; margin-left: -102px; margin-top: 53px;"></div>
+				<div id="mg" class="droppable"><img class="bin" src="./images/garbage.png" alt=""><img class="label" src="./images/Logo_Mongodb.svg.png" alt="" style="width: 71px; margin-left: -99px; margin-top: 54px;"></div>
 			</div>
 		</div>
 	</div>	
 	
 	<div class="player-div">
 		<div class="player-info">
-			<div><h3>Level 1:</h3><h5>Language Recognition</h5></div>
-			<div id="graphic"></div>
+
+			<div><h3 class="top">Level 1:</h3><h5>Language Recognition</h5></div>
+			<div id="graphic">
+				
+			</div>
+
 			<div class="player-score">
 				<h3>Score:</h3><br><span id="score">0</span>
 			</div>
 		</div>
+	</div>	
+	<a class="btn" data-popup-open="popup-1" href="#" style="display:none">Open Popup #1</a>
+	<div class="popup" data-popup="popup-1">
+	    <div class="popup-inner">
+	        <h2>Game Over!</h2>
+	        <h3>Final Score:</h3>
+	        <span class="final-score"></span><br>
+	        <button class="try-again">Try Again</button>
+	        <button class="next-level">Next Level</button>
+	        <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+	    </div>
 	</div>
 </body>
 </html>
