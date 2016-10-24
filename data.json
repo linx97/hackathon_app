@@ -1,7 +1,7 @@
 {
 	"jq": [".append()", ".band()", "accordion", "progressbar", "slider", ".find()", "mouseover", ".click", "class", "id"],
 	"ht": ["!doctype", "script", "head", "body", "p", "div", "href", "h1", "meta", "title", "style", "ul", "li", "link"],
-	"cs": ["footer", "width", "height", "id", "font", "color", "float", "margin", "padding", "background", "border", "hover"],
+	"cs": ["footer", "width", "height", "id", "font", "color", "float", "margin", "padding", "background-color", "background-image", "background-repeat", "background-attachment", "background-position", "border", "hover", "box-model", "psuedo-class", "opacity"],
 	"mg": ["insert", "find", "findOne", "schema", "noSQL", "BSON", "CRUD", "collections", "remove", "save", "update", "models"],
 	"ne": ["app", "use", "get", "post", "listen", "dbpath", "npm init", "install", "request", "response", "nodemon", "package.json", "event loop", "readFile", "readFileSync", "writeFile", "routes", "static", "body parser"],
 	"js": ["abstract", "boolean", "break", "byte", "case", "catch", "char", "class", "const", "continue", "debugger", "default", "delete", "do", "double", "else", "enum", "export", "extends", "false", "final", "finally", "float", "for", "function", "goto", "if", "implements", "import", "in instanceof", "int", "interface", "long", "native", "new", "null", "package", "private", "protected", "public","return", "short", "static", "super", "switch", "synchronized", "this", "throw", "throws", "transient", "true", "try", "typeof", "var", "volatile", "void", "while","with"]
