@@ -1,6 +1,6 @@
 {
-	"st": [".length", ".lastIndexOf", ".slice", ".substring", ".replace", ".toUpperCase", ".toLowerCase", ".charAt", ".charCodeAt", ".split"],
-	"nm": [".toString", ".toExponential", ".toFixed", ".toPrecision", ".valueOf", "parseInt", "parseFloat", ".MAX_VALUE", ".MIN_VALUE"],
-	"ar": [".join", ".pop", ".push", ".shift", ".unshift", ".length", ".splice", ".copyWithin()", ".findIndex", "isArray()", "map()", "reduce()", "some()", "sort()", "valueOf()"],
-	"ob": [".getOwnPropertyNames", "boolean", "break", "byte", "case", "catch", "char", "class", "const", "continue", "debugger", "default"]
+	"st": ["length()", "lastIndexOf()", "slice()", "substring()", "replace()", "toUpperCase()", "toLowerCase()", "charAt()", "charCodeAt()", "split()"],
+	"nm": ["toString()", "toExponential()", "toFixed()", "toPrecision()", "valueOf()", "parseInt()", "parseFloat()", "MAX_VALUE()", "MIN_VALUE()"],
+	"ar": ["join()", "pop()", "push()", "shift()", "unshift()", "length()", "splice()", "copyWithin()", "findIndex()", "isArray()", "map()", "reduce()", "some()", "sort()", "valueOf()"],
+	"ob": ["getOwnPropertyNames()", "boolean()", "break()", "byte()", "case()", "catch()", "char()", "class()", "const()", "continue()", "debugger()", "default()"]
 }
