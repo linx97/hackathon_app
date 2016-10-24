@@ -10,7 +10,18 @@ $(document).ready(function() {
       colors: ["#884AA3"],
       afterCloudRender: function() {
         $('.draggable').draggable({
-          stack: ".draggable"
+          stack: ".draggable",
+          drag: function (evt){
+           var target  = $(evt.target);
+           var top = target.position().top;
+           if(top > 320){
+             var scale =  1- ((top - 300) / (440-300));
+             target.css("transform", "scale("+scale+", 1)");
+           }
+           else{
+             target.css("transform", "scale(1, 1)");
+           }
+         }
         });
         var scoreCount = 0;
         $( function() {
