@@ -24,6 +24,7 @@ $(document).ready(function() {
               if (wordId === bin.id) {
                 score = score +100;
                 scoreCount += 1;
+                console.log(scoreCount);
                 $('#score').text(score);
                 $('#graphic').text("👍").fadeTo(500, 1).fadeTo(1000, 0);
 
@@ -42,6 +43,7 @@ $(document).ready(function() {
                 score = score -50;
                 scoreCount += 1;
                 $('#score').text(score);
+                console.log(scoreCount);
                 $('#graphic').text("👎").fadeTo(500, 1).fadeTo(1000, 0);
                 var rightBin = "#" + wordId;
                 $(rightBin).effect("shake");
