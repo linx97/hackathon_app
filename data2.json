@@ -1,6 +1,6 @@
 {
 	"st": ["trim()","substr()","startsWith()","search()","repeat()","match()","indexOf()","includes()","fromCharCode()","endsWith()","concat()","length()", "lastIndexOf()", "slice()", "substring()", "replace()", "toUpperCase()", "toLowerCase()", "charAt()", "charCodeAt()", "split()"],
-	"nm": ["toString()", "toExponential()", "toFixed()", "toPrecision()", "valueOf()", "parseInt()", "parseFloat()", "MAX_VALUE()", "MIN_VALUE()"],
-	"ar": ["join()", "pop()", "push()", "shift()", "unshift()", "length()", "splice()", "copyWithin()", "findIndex()", "isArray()", "map()", "reduce()", "some()", "sort()", "valueOf()"],
-	"ob": ["getOwnPropertyNames()", "boolean()", "break()", "byte()", "case()", "catch()", "char()", "class()", "const()", "continue()", "debugger()", "default()"]
-}
+	"nm": ["isSafeInteger()","isNaN()","isInterger()","isFinite()","toString()", "toExponential()", "toFixed()", "toPrecision()", "valueOf()", "parseInt()", "parseFloat()", "MAX_VALUE()", "MIN_VALUE()"],
+	"ar": ["slice()","reverse()","reduceRight()","lastIndexOf()","indexOf()","forEach()","find()","filter()","fill()","every()","join()", "pop()", "push()", "shift()", "unshift()", "length()", "splice()", "copyWithin()", "findIndex()", "isArray()", "map()", "reduce()", "some()", "sort()", "valueOf()"],
+	"dm": ["activeElement","addEventListener()","adpotNode()","anchors","baseURI","body","close()","cookie","createAttribute()","createComment()","createElement()","createTextNode()","doctype","documentElement","documentURI","forms","getElementbyId()","getElementsByClassName()","getElementsByName()","getElementsByTagName()","hasFocus()","head","images","links","open()","querySelector()","readyState","removeEventListener()","scripts","title","URL","write()"],
+}	
