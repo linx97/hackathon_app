@@ -71,7 +71,7 @@ $(document).ready(function() {
                 
               }
               $('.next-level').click(function() {
-                  document.location = "./level2.html";
+                  document.location = "#";
                 });
                 $('.try-again').click(function() {
                       location.reload();
