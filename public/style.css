@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	background-image: url("./images/pattern-025-light.jpg");
+	background-image: url("./images/pattern-025.jpg");
 	background-attachment: fixed;
 	background-repeat: none;
 	background-size: cover;
@@ -15,7 +15,7 @@ body {
 }
 
 .body2 {
-	background-image: url("./images/pattern-0252-light.png");
+	background-image: url("./images/pattern-0252.png");
 }
 
 
@@ -34,13 +34,13 @@ h1 {
 	background-color: white;
 	color: darkOrchid;
 	font-size: 20px;
-	border-radius: 5px;
+	border-radius: 8px;
 	margin-left: 60px;
-	opacity: 0.6;
-	padding: 5px 30px 0 30px;
+	opacity: 0.7;
+	padding: 7px 30px 0 30px;
     font-size: 3em;
     color: #2F2F2F ;
-    border: 4px solid #2C2C2C;
+    border: 4px solid #474747;
     -moz-box-shadow:    inset 0 0 10px #000000;
    -webkit-box-shadow: inset 0 0 10px #000000;
    box-shadow:         inset 0 0 10px #000000;
@@ -90,7 +90,7 @@ h1 {
 }
 
 div.jqcloud span.w5 {
-   font-size: 225%;
+   font-size: 250%;
    z-index: 5 ;
    font-family: 'Inconsolata', monospace;
    cursor: auto;
@@ -99,7 +99,7 @@ div.jqcloud span.w5 {
 div.jqcloud span:hover{
 	z-index: 5;
  	transform: scale(1.1);
- 	color: #e0c1ef  !important;
+ 	color: #9866AE  !important;
  	cursor: pointer;
 }
 
@@ -157,7 +157,7 @@ h5 {
 /* HEADER */
 
 #wrapper {
-  margin-top: 35px;
+  margin-top: 50px;
   background: transparent;
   height: 18%;
 }

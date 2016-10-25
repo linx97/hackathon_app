@@ -7,7 +7,7 @@ $(document).ready(function() {
     var score = 0;
     $('.word-div').jQCloud(wordList, {
       autoResize: true,
-      colors: ["#884AA3"],
+      colors: ["#3C2049"],
       afterCloudRender: function() {
         $('.draggable').draggable({
           stack: ".draggable",
@@ -35,7 +35,6 @@ $(document).ready(function() {
               if (wordId === bin.id) {
                 score = score +100;
                 scoreCount += 1;
-                console.log(scoreCount);
                 $('#score').text(score);
                 $('#graphic').text("👍").fadeTo(500, 1).fadeTo(1000, 0);
 
@@ -54,7 +53,7 @@ $(document).ready(function() {
                 score = score -50;
                 scoreCount += 1;
                 $('#score').text(score);
-                console.log(scoreCount);
+
                 $('#graphic').text("👎").fadeTo(500, 1).fadeTo(1000, 0);
                 var rightBin = "#" + wordId;
                 $(rightBin).effect("shake");
@@ -72,7 +71,7 @@ $(document).ready(function() {
                 
               }
               $('.next-level').click(function() {
-                  document.location = "./level2.html";
+                  document.location = "#";
                 });
                 $('.try-again').click(function() {
                       location.reload();
@@ -85,18 +84,6 @@ $(document).ready(function() {
     });
   }, 'json');
 
-//   $(function() {
-//     //----- OPEN
-//     $('[data-popup-open]').on('click', function(e)  {
-//         var targeted_popup_class = jQuery(this).attr('data-popup-open');
-//         $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
- 
-//         e.preventDefault();
-//     });
- 
-//     //----- CLOSE
-//     
-// });
 });
 
 
